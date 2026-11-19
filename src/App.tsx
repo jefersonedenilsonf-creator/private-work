@@ -1,19 +1,20 @@
-import Boton from "./Boton"
+import Boton from './Boton';
 function App() {
-
-
-  return (
-    <>
-      <h1 className="bg-blue-600 text-white py-4 my-5 text-center text-2xl font-bold">
-       My aplicacion con tailwind
-      </h1>
-      <div className="p-6 flex gap-4">
-        
-      </div>
-
-    </>
-  )
+ return (
+    <div className="p-6 flex gap-4">
+      <Boton variante="primario" onClick={() => alert('Guardado correctamente')}>
+        Guardar Cambios
+      </Boton>
+      <Boton variante="secundario" onClick={() => alert('Operación cancelada')}>
+        Cancelar
+      </Boton>
+      <Boton variante="peligro" onClick={() => alert('Registro eliminado')}>
+        Eliminar Usuario
+      </Boton>
+    </div>
+ );
 }
+
 
 export default App
 
