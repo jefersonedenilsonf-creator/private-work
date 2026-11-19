@@ -1,6 +1,6 @@
 export const Grid = () => {
     return (
-        <div className="grid grid-cols-3 gap-4 p-4 text-center">
+        <div className="grid grid-cols-1 gap-4 p-4 text-center sm:grid-cols-2 lg:grid-cols-3">
             <div className="bg-gray-200 p-4 rounded-lg">Elemento 1</div>
             <div className="bg-gray-200 p-4 rounded-lg">Elemento 2</div>
             <div className="bg-gray-200 p-4 rounded-lg">Elemento 3</div>
