@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Boton from "./Boton"
 import { Flex } from "./components/Flex"
 import { Grid } from "./components/Grid"
 
@@ -85,6 +86,26 @@ function App() {
               Esta es la página principal de la aplicación. Usa el menú para visitar los ejemplos
               de Flex y Grid.
             </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <Boton
+                variante="primario"
+                onClick={() => alert("Guardado correctamente")}
+              >
+                Guardar Cambios
+              </Boton>
+              <Boton
+                variante="secundario"
+                onClick={() => alert("Operación cancelada")}
+              >
+                Cancelar
+              </Boton>
+              <Boton
+                variante="peligro"
+                onClick={() => alert("Registro eliminado")}
+              >
+                Eliminar Usuario
+              </Boton>
+            </div>
           </section>
         )}
 
